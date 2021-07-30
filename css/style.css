@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,900&display=swap');
+
+/* ================================================
+default css
+================================= */
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width:1140px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+section{
+    padding:100px 0px;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    color: #696969;
+}
+
+/* ===================================
+header css
+=========================== */
+
+header{
+    background: linear-gradient(45deg, #FB6857, lightsalmon);
+    padding: 15px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.inner-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+}
+.half-header ul{
+    text-align: right;
+    list-style: none;
+}
+.half-header ul li{
+    display: inline-block;
+}
+.half-header ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.half-header ul li a:hover{
+    background: transparent;
+}
+
+.half-header ul li a::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.half-header ul li a:hover::after{
+    width:100%;
+    opacity: 1;
+}
+
+/*=================================
+ home css 
+ ==================================*/
+
+#home{
+    background: url(../images/home-banner.png);
+    background-repeat: no-repeat;
+}
+
+.inner-home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.half-home h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.highlight{
+    color: orange;
+}
+
+.half-home h2{
+    margin-bottom: 5px;
+}
+
+.link-btn{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    background: linear-gradient(45deg, #FB6857, lightsalmon);
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    border: 1px solid lightsalmon;
+    transition: .5s;
+}
+
+.link-btn:hover{
+    background: transparent;
+    color: #000;
+}
+
+.half-home p{
+    width:80%;
+    margin: 10px 0px 20px 0px;
+}
+
+/* ================================-====
+about css
+==================================== */
+#about{
+    background: url(../images/dream-bg.png) ;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+.inner-about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.half-about{
+    width: 40%;
+}
+
+.half-about h2{
+    text-transform:uppercase;
+    margin-bottom:5px;
+    font-size: 25px;
+
+}
+
+.half-about p{
+    margin: 10px 0px 20px 0px;
+}
+
+
+/* =======================================================
+experience css
+============================================================= */
+
+#experience{
+    background: url(../images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.inner-experience{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.half-exp{
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 40px gray;
+    padding: 50px 20px;
+}
+
+#full-stack{
+    border-left: 5px solid;
+    border-image:linear-gradient(180deg,#FB6857, lightsalmon);
+    border-image-slice: 1;
+}
+
+#baby-dev{
+    border-left: 5px solid;
+    border-image:linear-gradient(180deg,blue, cyan);
+    border-image-slice: 1;
+}
+
+
+.half-exp h2,h3{
+    margin-bottom: 10px;
+}
+
+.sectionTitle{
+    margin-bottom: 20px;
+}
+
+.sectionTitle h1{
+    font-size: 30px;
+}
+
+
+/* ========================================
+footer css
+============================== */
+
+footer{
+    padding:20px 0px;
+    background: gray;
+}
+
+footer p{
+    text-align: center;
+    color:#fff;
+    font-size: 12px;
+}
